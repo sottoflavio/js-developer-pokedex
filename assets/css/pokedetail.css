@@ -1,0 +1,234 @@
+body {
+    display: flex;
+    justify-content: center;
+    height: 95vh;
+    background-color: #c2bdbe;
+}
+
+.containerGeral {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.842);
+    border-radius: 20px;
+    min-width: 355px;
+}
+
+#card-big {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48%;
+    height: 100%;
+    margin: auto;
+    min-width: 355px;
+}
+
+#detalhe_pokemon_grande {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    width: 45%;
+    height: 85%;
+    min-width: 355px;
+}
+
+.big-img {
+    width: 31vw;
+    height: 37vh; 
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+#bigDetalhe {
+    width: 100%;
+    margin-top: 0.7rem;
+}
+
+
+.detalhe {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.big-name {
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-left: 5px;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.big-number {
+    color: #000;
+    opacity: 0.2;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 60px;
+    margin-top:2rem;
+}
+
+.img-Types {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.typesBig {
+    width: 35%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: -7px;
+    padding: 5px;
+}
+
+.typeBig1 {
+    display: flex;
+    width: 80px;
+    justify-content: center;
+    border-radius: 8px;
+    color: #FFF;
+    filter: brightness(1.1);
+    align-self: center;
+    
+}
+
+.btnBig {
+    width: 100px;
+    height: 1.25rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background-color: #4c67fd;
+    color: #fff;
+    font-size: 0.625rem;
+    border-radius: 10px;
+    border-color: #4c67fd;
+}
+
+.footer {
+    margin-top: 10px;
+    display: flex;
+    width: 93%;
+    height: 39%;
+}
+
+.abilities {
+    width: 50%;
+    min-height: 200px;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 3px;
+    font-size: 0.825rem;
+    font-weight: 700;
+    list-style: none;
+    align-items: center;
+    margin-right: 5px;
+
+    border-radius: 10px;
+    box-shadow: -1px -1px 3px #0000002c;
+}
+
+.abilities h3 {
+    align-self: center;
+    color: #f8f6f1;
+    font-size: 1rem;
+    text-shadow: rgba(0, 0, 0, 0.24) 0.4px 0.4px 0.4px;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+}
+
+.ability1, .ability2 {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.moves-div {
+    width: 50%;
+    min-height: 200px;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 2px;
+    font-size: 0.825rem;
+    font-weight: 700;
+    list-style: none;
+    align-items: center;
+    margin-left: 5px;
+
+    border-radius: 12px;
+    box-shadow: -1px -1px 3px #00000028;
+}
+
+.moves-div h3 {
+    color: #f8f6f1;
+    text-shadow: rgba(0, 0, 0, 0.11) 0.4px 0.4px 0.4px;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+.moves1, .moves2, .moves3 {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 470px) {
+    .containerGeral {
+        width: 100%;
+        height: 100%;
+    }
+
+    #detalhe_pokemon_grande {
+        width: 149%;
+        height: 92%;
+    }
+
+    .detalhe {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: -10px;
+    }
+
+    .big-img {
+        width: 58vw;
+        height: 37vh;
+        margin-top: -3px;
+        margin-left: 14px;
+    }
+
+    .big-number {
+        font-size: 1rem;
+        align-self: flex-end;
+        margin-right: 8px;
+        margin-top: 3px;
+    }
+
+    .big-name {
+        font-size: 2.3rem;
+        margin-left: -90px;
+        margin-top: -21px;
+        letter-spacing: 1px;
+    }
+
+    .footer {
+        margin-top: 27px;
+    }
+
+    .moves-div h3 {
+        text-align: center;
+    }
+
+    .btnBig {
+        width: 16vw;
+    }
+}
